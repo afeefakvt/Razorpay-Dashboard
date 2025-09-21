@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import type {PaymentOverview, InsightMetric, PaymentMethod, ChartDataPoint } from '../types/dashboard'
 
 export const useDashboardData = () => {
-  const [paymentOverview, setPaymentOverview] = useState<PaymentOverview>({
+  const [paymentOverview ] = useState<PaymentOverview>({
     collectedAmount: {
       value: '₹ 0',
       change: 35,
@@ -23,7 +23,7 @@ export const useDashboardData = () => {
     }
   });
 
-  const [insights, setInsights] = useState<InsightMetric[]>([
+  const [insights] = useState<InsightMetric[]>([
     {
       title: 'Payment count',
       value: 47,
@@ -58,7 +58,7 @@ export const useDashboardData = () => {
     }
   ]);
 
-  const [paymentMethods, setPaymentMethods] = useState<PaymentMethod[]>([
+  const [paymentMethods] = useState<PaymentMethod[]>([
     {
       name: 'Card',
       value: '₹ 0',
@@ -79,7 +79,7 @@ export const useDashboardData = () => {
     }
   ]);
 
-  const [chartData, setChartData] = useState<ChartDataPoint[]>([
+  const [chartData] = useState<ChartDataPoint[]>([
     { date: 'Sep 11', value: 45000 },
     { date: 'Sep 12', value: 52000 },
     { date: 'Sep 13', value: 48000 },
