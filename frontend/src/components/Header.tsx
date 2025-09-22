@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
         {/* Mobile menu button */}
       <button
         onClick={onMenuClick}
-        className="p-2 rounded-md text-gray-600 hover:bg-gray-100 lg:hidden"
+        className="p-2 rounded-md text-gray-600 hover:bg-gray-100 md:hidden"
         aria-label="Open menu"
       >
         <Menu className="h-5 w-5" />
@@ -42,7 +42,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
         <img src={logo} alt="Logo" className="h-25 w-25 ml-6" />
 
         {/* Navigation tabs - hidden on mobile */}
-        <nav className="hidden md:flex items-center space-x-1 ml-25">
+        <nav className="hidden lg:flex items-center space-x-1 ml-25">
           {navItems.map((item, index) => (
             <a
               key={index}
