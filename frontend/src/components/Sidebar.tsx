@@ -101,7 +101,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                 <a
                   key={index}
                   href="#"
-                  className="flex items-center px-3 py-2 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                  className="flex items-center px-3 py-2 text-sm font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-gray-900 transition-colors"
                 >
                   <item.icon className="mr-3 h-4 w-4" />
                   {item.label}
@@ -124,7 +124,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                 <a
                   key={index}
                   href="#"
-                  className="flex items-center px-3 py-2 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                  className="flex items-center px-3 py-2 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-colors"
                 >
                   <item.icon className="mr-3 h-4 w-4" />
                   {item.label}
@@ -144,7 +144,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                 <a
                   key={index}
                   href="#"
-                  className="flex items-center px-3 py-2 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                  className="flex items-center px-3 py-2 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-colors"
                 >
                   <item.icon className="mr-3 h-4 w-4" />
                   {item.label}
@@ -157,14 +157,14 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
             <nav className="px-3 space-y-1">
               <a
                 href="#"
-                className="flex items-center px-3 py-2 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                className="flex items-center px-3 py-2 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-colors"
               >
                 <HelpCircle className="mr-3 h-4 w-4" />
                 Test Mode
               </a>
               <a
                 href="#"
-                className="flex items-center px-3 py-2 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                className="flex items-center px-3 py-2 text-sm font-medium text-gray-600 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-colors"
               >
                 <Settings className="mr-3 h-4 w-4" />
                 Account & Settings
