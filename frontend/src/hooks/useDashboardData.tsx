@@ -93,7 +93,6 @@ export const useDashboardData = () => {
 
   // Simulate data loading
   useEffect(() => {
-    // In a real app, this would fetch data from an API
     const timer = setTimeout(() => {
       // Data is already set in useState
     }, 1000);

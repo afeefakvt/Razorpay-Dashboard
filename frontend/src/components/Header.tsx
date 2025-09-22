@@ -30,7 +30,6 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
 
       <div className="flex items-center space-x-4 ">
 
-        {/* Mobile menu button */}
       <button
         onClick={onMenuClick}
         className="p-2 rounded-md text-gray-600 hover:bg-gray-100 md:hidden"
@@ -68,9 +67,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
         </nav>
       </div>
 
-      {/* Right section */}
       <div className="flex items-center space-x-3">
-        {/* Search */}
         <div className="relative hidden sm:block">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
           <input
@@ -85,13 +82,11 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
           <Search className="h-5 w-5" />
         </button>
 
-        {/* Notifications */}
         <button className="p-2 rounded-md text-gray-600 hover:bg-gray-100 relative">
           <Bell className="h-5 w-5" />
           <span className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
         </button>
 
-        {/* User menu */}
         <div className="flex items-center space-x-2">
           <button className="flex items-center space-x-2 p-2 rounded-md text-gray-600 hover:bg-gray-100">
             <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">

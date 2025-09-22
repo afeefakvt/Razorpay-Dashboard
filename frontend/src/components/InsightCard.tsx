@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, TrendingDown, Info, ExternalLink } from 'lucide-react';
+import {  Info, ExternalLink } from 'lucide-react';
 import LineChart from './LineChart';
 import type { InsightMetric } from '../types/dashboard';
 
@@ -10,9 +10,9 @@ interface InsightCardProps {
 const InsightCard: React.FC<InsightCardProps> = ({ metric }) => {
   const isPositive = metric.trend === 'up';
   const changeColor = isPositive ? 'text-green-600' : 'text-red-600';
-  const bgColor = isPositive ? 'bg-green-50' : 'bg-red-50';
+  // const bgColor = isPositive ? 'bg-green-50' : 'bg-red-50';
 
-  // Generate sample chart data for demonstration
+  //  sample chart data for demonstration
   const chartData = metric.chartData?.map((value, index) => ({
     date: `Day ${index + 1}`,
     value
