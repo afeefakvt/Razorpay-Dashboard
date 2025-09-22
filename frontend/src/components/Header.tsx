@@ -51,7 +51,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
                 flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors relative
                 ${
                   item.active
-                    ? "text-blue-600 bg-blue-50"
+                    ? "text-gray-600 bg-gray-50"
                     : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                 }
               `}
@@ -76,7 +76,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
           <input
             type="text"
             placeholder="Search..."
-            className="pl-10 pr-4 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent w-64"
+            className="bg-gray-50 pl-10 pr-4 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent w-64"
           />
         </div>
 
